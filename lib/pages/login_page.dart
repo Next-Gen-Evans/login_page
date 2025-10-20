@@ -62,8 +62,8 @@ void signUserIn(){}
               const SizedBox(height: 10),
 
               // forgot password
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25.0),
                child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -85,8 +85,8 @@ void signUserIn(){}
               const SizedBox(height: 50),
 
               // or continue with
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 25.0),
               child: Row(
               children: [
                 Expanded(
@@ -95,7 +95,7 @@ void signUserIn(){}
                    color: Colors.black,
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              Padding(padding: EdgeInsets.symmetric(horizontal: 10.0),
               child: Text(
                 'or continue with',
                 style: TextStyle(color: Colors.black),
@@ -116,9 +116,9 @@ void signUserIn(){}
 
 
               // google + apple sign in buttons
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [ 
+                children: [ 
                 //google button
                SquareTile(imagepath: 'lib/images/google.png'),
 
@@ -133,14 +133,14 @@ void signUserIn(){}
                 const SizedBox(height: 50),
 
               // not a member? register now
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 Text(
                   'Not a member?',
                   style: TextStyle(color: Colors.black),
                   ),
-                const SizedBox(width: 4),
+                SizedBox(width: 4),
                 Text('Register now',
                 style: TextStyle(
                   color: Colors.blue, 
